@@ -89,8 +89,6 @@ internal abstract class WebSocketClientServlet(
         pushMetaLifecycle()
         if (firstOpen) {
             firstOpen = false
-        } else {
-            unsubscribe()
         }
         init()
     }
